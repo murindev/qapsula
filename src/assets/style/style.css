@@ -97,6 +97,9 @@ img {
   height: auto;
 }
 .adelle-semibold {
+  font-family: "Adelle Cyrillic Semibold", sans-serif;
+}
+.adelle-regular {
   font-family: "Adelle Cyrillic", sans-serif;
 }
 .segoe-ui-regular {
@@ -113,8 +116,12 @@ img {
 .fade-leave-to {
   opacity: 0;
 }
+h2 {
+  font-family: "Adelle Cyrillic", sans-serif;
+}
 h2 b {
   color: #2CB2DB;
+  font-family: "Adelle Cyrillic Semibold", sans-serif;
 }
 ::-webkit-input-placeholder {
   /* Chrome */
@@ -189,7 +196,7 @@ button {
   margin: 40px auto 0;
 }
 .btn:hover {
-  opacity: 0.9;
+  box-shadow: 0px 5px 10px rgba(51, 51, 51, 0.25);
 }
 .btn span {
   margin-top: -2px;
@@ -209,6 +216,7 @@ button {
 .tpl {
   position: absolute;
   z-index: -22;
+  background: url("../img/screens/mobile.png") no-repeat center 0px;
   background-size: calc(100%);
   width: 100%;
   height: 20000px;
@@ -420,7 +428,7 @@ header {
   position: fixed;
   width: auto;
   height: auto;
-  top: 72px;
+  top: 73px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -654,6 +662,7 @@ footer {
   }
 }
 .technologies-text p b {
+  font-family: "Adelle Cyrillic Semibold", sans-serif;
   color: #2CB2DB;
 }
 .technologies-text p b:before {
@@ -677,6 +686,9 @@ footer {
   margin: 34px 0 78px;
   color: #2CB2DB;
   font-size: 16px;
+}
+.technologies-text > span em {
+  font-family: 'Segoe UI', sans-serif;
 }
 @media screen and (max-width: 960px) {
   .technologies-text > span {
@@ -752,7 +764,7 @@ footer {
   justify-content: center;
 }
 .info-text h2 {
-  font-family: "Adelle Cyrillic", sans-serif;
+  font-family: "Adelle Cyrillic Semibold", sans-serif;
   font-size: 39px;
   margin-bottom: 30px;
 }
@@ -761,6 +773,10 @@ footer {
   font-size: 16px;
   line-height: 27px;
   position: relative;
+  font-family: 'Segoe UI', sans-serif;
+}
+.info-text p b {
+  font-family: 'Segoe UI Semibold', sans-serif;
 }
 .info-text p:after {
   content: '';
@@ -825,6 +841,9 @@ footer {
     transform: translateX(-50%);
   }
 }
+.team {
+  overflow: hidden;
+}
 .team-heading {
   box-sizing: border-box;
   word-wrap: break-word;
@@ -840,7 +859,7 @@ footer {
   }
 }
 .team-heading h2 {
-  font-family: "Adelle Cyrillic", sans-serif;
+  font-family: "Adelle Cyrillic Semibold", sans-serif;
   font-size: 39px;
 }
 @media screen and (max-width: 960px) {
@@ -914,12 +933,11 @@ footer {
   background: url("../img/right.svg") no-repeat center;
   position: absolute;
 }
-.team-controls_arrows > span:hover {
-  opacity: 0.5;
-  box-shadow: 0 2px 8px rgba(51, 51, 51, 0.15);
-}
 .team-controls_arrowsRight.rightActive {
   opacity: 1;
+}
+.team-controls_arrowsRight.rightActive:hover {
+  box-shadow: 0 2px 8px rgba(51, 51, 51, 0.15);
 }
 .team-controls_arrowsLeft {
   margin-top: auto;
@@ -929,6 +947,9 @@ footer {
 }
 .team-controls_arrowsLeft.leftActive {
   opacity: 1;
+}
+.team-controls_arrowsLeft.leftActive:hover {
+  box-shadow: 0 2px 8px rgba(51, 51, 51, 0.15);
 }
 .team-wrapper {
   overflow: hidden;
@@ -974,6 +995,7 @@ footer {
   }
 }
 .team-slide_text p {
+  font-family: "Adelle Cyrillic Semibold", sans-serif;
   width: 100%;
   box-sizing: border-box;
   padding-right: 18px;
@@ -1000,6 +1022,7 @@ footer {
   margin-right: 12px;
 }
 .team-slide_text p span {
+  font-family: 'Segoe UI', sans-serif;
   font-size: 12px;
 }
 @media screen and (max-width: 960px) {
@@ -1051,7 +1074,7 @@ footer {
   }
 }
 .question-block h2 {
-  font-family: "Adelle Cyrillic", sans-serif;
+  font-family: "Adelle Cyrillic Semibold", sans-serif;
   font-size: 39px;
   text-align: center;
   box-sizing: border-box;
@@ -1084,7 +1107,6 @@ footer {
   }
 }
 .form-title h2 {
-  font-family: "Adelle Cyrillic", sans-serif;
   font-size: 39px;
   text-align: center;
   margin-bottom: 30px;
@@ -1128,11 +1150,12 @@ footer {
 }
 @media screen and (max-width: 960px) {
   .form-fields label {
-    padding-top: 24px;
+    padding-top: 21px;
   }
 }
 .form-fields input,
 .form-fields textarea {
+  font-family: 'Segoe UI', sans-serif;
   box-sizing: border-box;
   display: block;
   border: none;
@@ -1163,8 +1186,10 @@ footer {
   padding: 12px 24px;
   border: 2px solid #eaf7fb;
   outline: none;
+  resize: vertical;
 }
 .form-fields button {
+  font-family: 'Segoe UI Semibold', sans-serif;
   margin-top: 24px;
   width: 100%;
   outline: none;

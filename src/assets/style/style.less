@@ -35,6 +35,7 @@ section, header, footer, main, .container {
   box-sizing: border-box;
   width: 100%;
 
+
   > div {
     .wrapper();
 
@@ -135,7 +136,7 @@ header {
       position: fixed;
       width: auto;
       height: auto;
-      top: 72px;
+      top: 73px;
       left: 0;
       right: 0;
       bottom: 0;
@@ -334,11 +335,12 @@ footer {
     });
 
     p {
-      .adelle-semibold;
+      .adelle-regular;
       font-size: 39px;
       text-align: center;
       .md-block({font-size: 26px; });
       b {
+        .adelle-semibold;
         color: @textActive;
 
         &:before {
@@ -358,6 +360,9 @@ footer {
       margin: 34px 0 78px;
       color: @textActive;
       font-size: 16px;
+      em {
+        .segoe-ui-regular;
+      }
 
       .md-block({
         font-size: 14px;
@@ -442,6 +447,10 @@ footer {
       font-size: 16px;
       line-height: 27px;
       position: relative;
+      .segoe-ui-regular;
+      b {
+        .segoe-ui-semibold;
+      }
 
       &:after {
         content: '';
@@ -516,6 +525,7 @@ footer {
 }
 
 .team {
+  overflow: hidden;
   &-heading {
     .col();
     .size(24);
@@ -597,16 +607,14 @@ footer {
           background: url("../img/right.svg") no-repeat center;
           position: absolute;
         }
-
-        &:hover {
-          opacity: .5;
-          box-shadow: 0 2px 8px rgba(51, 51, 51, 0.15);
-        }
       }
 
       &Right {
         &.rightActive {
           opacity: 1;
+          &:hover {
+            box-shadow: 0 2px 8px rgba(51, 51, 51, 0.15);
+          }
         }
       }
 
@@ -619,6 +627,9 @@ footer {
 
         &.leftActive {
           opacity: 1;
+          &:hover {
+            box-shadow: 0 2px 8px rgba(51, 51, 51, 0.15);
+          }
         }
       }
     }
@@ -671,6 +682,7 @@ footer {
       });
 
       p {
+        .adelle-semibold;
         width: 100%;
         box-sizing: border-box;
         padding-right: 18px;
@@ -698,6 +710,7 @@ footer {
         }
 
         span {
+          .segoe-ui-regular;
           font-size: 12px;
           .md-block({
             display: block;
@@ -783,7 +796,6 @@ footer {
 
   &-title {
     h2 {
-      .adelle-semibold;
       font-size: 39px;
       text-align: center;
       margin-bottom: 30px;
@@ -824,11 +836,12 @@ footer {
       position: relative;
       padding-top: 17px;
       .md-block({
-        padding-top: 24px;
+        padding-top: 21px;
       });
     }
 
     input, textarea {
+      .segoe-ui-regular;
       box-sizing: border-box;
       display: block;
       border: none;
@@ -867,9 +880,11 @@ footer {
       padding: 12px 24px;
       border: 2px solid @inputBg;
       outline: none;
+      resize: vertical;
     }
 
     button {
+      .segoe-ui-semibold;
       margin-top: 24px;
       width: 100%;
       outline: none;

@@ -13,10 +13,17 @@
   /* Chrome < 4, Legacy iOS */
 }
 @font-face {
-  font-family: 'Adelle Cyrillic';
+  font-family: 'Adelle Cyrillic Semibold';
   src: url('fonts/adelle/AdelleCyrillic-SemiBold.eot');
   src: local('Adelle Cyrillic SemiBold'), local('AdelleCyrillic-SemiBold'), url('fonts/adelle/AdelleCyrillic-SemiBold.eot?#iefix') format('embedded-opentype'), url('fonts/adelle/AdelleCyrillic-SemiBold.woff') format('woff'), url('fonts/adelle/AdelleCyrillic-SemiBold.ttf') format('truetype');
   font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Adelle Cyrillic';
+  src: url('fonts/adelle/AdelleCyrillic.eot');
+  src: local('Adelle Cyrillic'), local('AdelleCyrillic'), url('fonts/adelle/AdelleCyrillic.eot?#iefix') format('embedded-opentype'), url('fonts/adelle/AdelleCyrillic.woff') format('woff'), url('fonts/adelle/AdelleCyrillic.ttf') format('truetype');
+  font-weight: normal;
   font-style: normal;
 }
 /*# sourceMappingURL=fonts.css.map */

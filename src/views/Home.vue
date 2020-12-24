@@ -48,7 +48,7 @@
                         </div>
                         <div class="info-text">
                             <h2>82% отрубей</h2>
-                            <p>количественный рост <br/>
+                            <p><b>количественный рост</b> <br/>
                                 и сфера нашей активности
                             </p>
                             <a class="info-link" href="javascript:">*cnews.ru/link/n477201</a>
